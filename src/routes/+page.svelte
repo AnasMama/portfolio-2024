@@ -1,2 +1,6 @@
-<h1>Welcome to SvelteKit</h1>
+<script lang="ts">
+	import { _ } from 'svelte-i18n';
+</script>
+
+<h1 class="bg-base-default">{$_("projects.title")}</h1>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
