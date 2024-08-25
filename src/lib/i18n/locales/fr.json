@@ -1,6 +1,11 @@
 {
-    "projects": {
-        "title": "Projets",
-        "description": "Découvrez mes projets"
-    }
+	"projects": {
+		"title": "Projets",
+		"description": "Découvrez mes projets"
+	},
+	"navigation": {
+		"about": "À  propos",
+		"projects": "Projets",
+		"contact": "Contact"
+	}
 }

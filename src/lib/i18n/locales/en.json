@@ -1,1 +1,7 @@
-{}
+{
+	"navigation": {
+		"projects": "Projects",
+		"contact": "Contact",
+		"about": "About"
+	}
+}
