@@ -7,5 +7,12 @@
 		"about": "À  propos",
 		"projects": "Projets",
 		"contact": "Contact"
+	},
+	"homepage": {
+		"have-question": "Vous avez des questions ?",
+		"contact-me": "Contactez moi",
+		"developer": "<strong>Concepteur Développeur</strong> d'application web et mobile",
+		"about-me": "Je suis développeur web full-stack domicilié à Toulouse. Dans ce portfolio, je vous présente mes quelques projets réalisés en Sveltekit/Next/TypeScript/Node. Bienvenue dans mon univers !",
+		"my-works": "Mes projets"
 	}
 }

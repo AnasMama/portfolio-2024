@@ -4,6 +4,6 @@
 </script>
 
 <NavBar />
-<main class="w-full max-w-screen-2xl p-8">
+<main class="w-full">
 	<slot />
 </main>
