@@ -85,7 +85,7 @@
 				href="https://www.linkedin.com/in/anasmama/"
 				target="_blank"
 				rel="noopener"
-				class="col-start-2 hover:scale-125 transition-all duration-300"
+				class="col-start-2 hover:scale-[1.2] transition-all duration-300"
 				in:fade
 			>
 				<Icon name="linkedin" width="2rem" height="2rem" />
@@ -96,7 +96,7 @@
 				href="https://www.linkedin.com/in/anasmama/"
 				target="_blank"
 				rel="noopener"
-				class="hover:scale-125 transition-all duration-300"
+				class="hover:scale-[1.2] transition-all duration-300"
 				in:fade
 			>
 				<Icon name="github" width="2rem" height="2rem" />
@@ -105,7 +105,7 @@
 		{#if animationSteps.icon_3}
 			<a
 				href="mailto:anas.mama.am@gmail.com"
-				class="hover:scale-125 transition-all duration-300"
+				class="hover:scale-[1.2] transition-all duration-300"
 				in:fade
 			>
 				<Icon name="mail" width="2rem" height="2rem" />

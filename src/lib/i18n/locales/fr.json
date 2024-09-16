@@ -6,7 +6,9 @@
 	"navigation": {
 		"about": "À  propos",
 		"projects": "Projets",
-		"contact": "Contact"
+		"contact": "Contact",
+		"work-experiences": "Expèriences professionelles",
+		"information": "Mes informations"
 	},
 	"homepage": {
 		"have-question": "Vous avez des questions ?",
@@ -14,5 +16,27 @@
 		"developer": "<strong>Concepteur Développeur</strong> d'application web et mobile",
 		"about-me": "Je suis développeur web full-stack domicilié à Toulouse. Dans ce portfolio, je vous présente mes quelques projets réalisés en Sveltekit/Next/TypeScript/Node. Bienvenue dans mon univers !",
 		"my-works": "Mes projets"
+	},
+	"work-experience": {
+		"fullstack-developer": "Développeur web fullstack",
+		"onicorn": {
+			"conception": "Conception et modélisation à l’aide d’outils de maquettage (Excalidraw, Figma...)",
+			"development": "Création d’interfaces avec SvelteKit et Tailwind, et gestion des données via API GraphQL",
+			"clean": "Maintenance du code et respect des principes de Clean Code"
+		},
+		"teaching-assistant": "Formateur assistant",
+		"wild": {
+			"teaching": "Préparation de cours et ateliers sur HTML, CSS, React et Express",
+			"project": "Supervision de projets étudiants portés par de réels clients"
+		}
+	},
+	"lang": {
+		"french": "Français",
+		"english": "Anglais"
+	},
+	"hobbies": {
+		"manga": "Mangas",
+		"music": "Musique",
+		"bass": "Bass"
 	}
 }
