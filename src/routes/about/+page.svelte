@@ -76,6 +76,7 @@
 			<div class="h-1/3 w-full rounded overflow-hidden" />
 		{/if}
 	</article>
+	
 	<article class="grid grid-rows-8">
 		<div class="row-span-7">
 			{#if animationSteps.experiences}

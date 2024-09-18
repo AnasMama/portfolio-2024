@@ -62,7 +62,7 @@
 		{#if animationSteps.motifs}
 			<div
 				class="h-full w-full rounded overflow-hidden transition-all"
-				in:fly={{ y: -100, duration: 500 }}
+				in:fly={{ y: 100, duration: 500 }}
 			>
 				<Motif />
 			</div>

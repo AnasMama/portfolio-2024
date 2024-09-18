@@ -3,6 +3,7 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
+	import { view } from '$lib/function';
 
 	const animationSteps = {
         line1: false,
@@ -19,15 +20,15 @@
 	});
 </script>
 
-<a href="/projects" class="group/works relative h-full w-full flex" in:fade>
+<a href="/projects" class="group/works relative h-full w-full flex">
 	<div
 		class="h-px bg-base-light absolute top-0 left-0 right-0 transition-all duration-300 {animationSteps.line1
 			? 'w-full'
 			: 'w-0'}"
 	/>
 
-	<div class="flex justify-between items-center gap-4 px-6">
-		<p class="text-5xl font-normal">{$_('homepage.my-works')}</p>
+	<div class="w-full flex justify-between items-center gap-4 px-6">
+		<p class="text-3xl font-normal" style={view('projects-title')}>{$_('homepage.my-works')}</p>
 		<Icon
 			name="arrow"
 			width="2rem"

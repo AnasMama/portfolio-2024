@@ -5,6 +5,7 @@
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
 	import SocialLinks from '$lib/components/SocialLinks.svelte';
+	import { view } from '$lib/function';
 
 	let animationSteps = {
 		picture: false,
@@ -40,7 +41,7 @@
 <a href="/projects" class="group/works h-full w-full row-span-3 grid grid-rows-3">
 	{#if animationSteps.title}
 		<div class="row-span-1 h-full flex justify-between items-center gap-4 py-6 px-6" in:fade>
-			<p class="text-5xl font-normal">{$_('homepage.my-works')}</p>
+			<p class="text-5xl font-normal" style={view('projects-title')}>{$_('homepage.my-works')}</p>
 			<Icon
 				name="arrow"
 				width="2rem"
