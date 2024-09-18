@@ -38,5 +38,15 @@
 		"manga": "Mangas",
 		"music": "Musique",
 		"bass": "Bass"
+	},
+	"contact": {
+		"have-question": "Vous avez une question ou une proposition, ou vous souhaitez simplement dire bonjour ? \n Allez-y !"
+	},
+	"form": {
+		"name": "Nom",
+		"email": "Email",
+		"message": "Message",
+		"submit": "Envoyer",
+		"invalid-email": "Veuillez entrez un email valide."
 	}
 }

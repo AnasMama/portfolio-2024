@@ -3,11 +3,11 @@
 	import { onMount } from 'svelte';
 	import { _ } from 'svelte-i18n';
 	import { fly } from 'svelte/transition';
-	import Title from './(home)/Title.svelte';
-	import Contact from './(home)/Contact.svelte';
-	import About from './(home)/About.svelte';
+	import Title from './Title.svelte';
+	import Contact from './Contact.svelte';
+	import About from './About.svelte';
 	import Picture from '$lib/components/Picture.svelte';
-	import MyWorks from './(home)/MyWorks.svelte';
+	import MyWorks from './MyWorks.svelte';
 
 	let animationSteps = {
 		picture: false,
