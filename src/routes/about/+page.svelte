@@ -1,13 +1,34 @@
 <script lang="ts">
-	import { view } from '$lib/function';
+	import { onMount } from 'svelte';
+	import { fly } from 'svelte/transition';
 	import { _ } from 'svelte-i18n';
+	import { view } from '$lib/function';
+	import Motif from '$lib/components/Motif.svelte';
 	import WorkExperiences from './WorkExperiences.svelte';
 	import Information from './Information.svelte';
-	import Icon from '$lib/components/Icon.svelte';
-	import { fade, fly } from 'svelte/transition';
-	import Motif from '$lib/components/Motif.svelte';
+	import MyWorks from './MyWorks.svelte';
 
-	let isMotif = true;
+	let animationSteps = {
+		experiences: false,
+		myWorks: false,
+		motifs: false,
+		icons: false
+	};
+
+	onMount(() => {
+		setTimeout(() => {
+			animationSteps.experiences = true;
+		}, 300);
+		setTimeout(() => {
+			animationSteps.myWorks = true;
+		}, 450);
+		setTimeout(() => {
+			animationSteps.motifs = true;
+		}, 450);
+		setTimeout(() => {
+			animationSteps.icons = true;
+		}, 600);
+	});
 </script>
 
 <section class="w-full max-w-screen-2xl h-[800px] grid grid-cols-3 gap-2 mx-auto">
@@ -25,8 +46,8 @@
 		<Information />
 	</article>
 
-	<article class="w-full text-base-dark flex flex-col gap-2">
-		{#if isMotif}
+	<article class="w-full text-base-dark grid grid-rows-8 gap-2">
+		{#if animationSteps.motifs}
 			<div
 				class="h-24 w-full rounded overflow-hidden transition-all"
 				in:fly={{ y: -100, duration: 500 }}
@@ -44,7 +65,7 @@
 				style={view('about-picture')}
 			/>
 		</figure>
-		{#if isMotif}
+		{#if animationSteps.motifs}
 			<div
 				class="h-24 w-full rounded overflow-hidden transition-all"
 				in:fly={{ x: -100, duration: 500 }}
@@ -55,18 +76,16 @@
 			<div class="h-1/3 w-full rounded overflow-hidden" />
 		{/if}
 	</article>
-	<article class="flex flex-col justify-between">
-		<WorkExperiences />
-		<a href="/projects" class="group/works w-full border-y border-base-light">
-			<div class="row-span-1 h-full flex justify-between items-center gap-4 py-6 px-6" in:fade>
-				<p class="text-5xl font-normal">{$_('homepage.my-works')}</p>
-				<Icon
-					name="arrow"
-					width="2rem"
-					height="2rem"
-					class="group-hover/works:translate-x-2 group-hover/works:-translate-y-2 transition-all duration-300"
-				/>
-			</div>
-		</a>
+	<article class="grid grid-rows-8">
+		<div class="row-span-7">
+			{#if animationSteps.experiences}
+				<WorkExperiences />
+			{/if}
+		</div>
+		<div class="row-span-1">
+			{#if animationSteps.myWorks}
+				<MyWorks />
+			{/if}
+		</div>
 	</article>
 </section>

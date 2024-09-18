@@ -4,6 +4,7 @@
 	import LinkItem from '$lib/components/LinkItem.svelte';
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
+	import SocialLinks from '$lib/components/SocialLinks.svelte';
 
 	let animationSteps = {
 		picture: false,
@@ -11,9 +12,7 @@
 		line_1: false,
 		line_2: false,
 		line_3: false,
-		icon_1: false,
-		icon_2: false,
-		icon_3: false
+		icons: false
 	};
 
 	onMount(() => {
@@ -33,14 +32,8 @@
 			animationSteps.line_3 = true;
 		}, 600);
 		setTimeout(() => {
-			animationSteps.icon_1 = true;
+			animationSteps.icons = true;
 		}, 750);
-		setTimeout(() => {
-			animationSteps.icon_2 = true;
-		}, 900);
-		setTimeout(() => {
-			animationSteps.icon_3 = true;
-		}, 1050);
 	});
 </script>
 
@@ -59,8 +52,8 @@
 	{#if animationSteps.picture}
 		<div
 			class="row-span-2 row-start-2 h-full rounded bg-base-light overflow-hidden group-hover/works:translate-x-2 transition-all duration-300"
-		in:fly={{ x: 100, duration: 500 }}
-			>
+			in:fly={{ x: 100, duration: 500 }}
+		>
 			<img
 				src="/my-works.webp"
 				alt="hero"
@@ -80,36 +73,8 @@
 		<LinkItem href="#" label="Vite" />
 	{/if}
 	<div class="row-start-4 w-full grid grid-cols-5 items-center gap-16">
-		{#if animationSteps.icon_1}
-			<a
-				href="https://www.linkedin.com/in/anasmama/"
-				target="_blank"
-				rel="noopener"
-				class="col-start-2 hover:scale-[1.2] transition-all duration-300"
-				in:fade
-			>
-				<Icon name="linkedin" width="2rem" height="2rem" />
-			</a>
-		{/if}
-		{#if animationSteps.icon_2}
-			<a
-				href="https://www.linkedin.com/in/anasmama/"
-				target="_blank"
-				rel="noopener"
-				class="hover:scale-[1.2] transition-all duration-300"
-				in:fade
-			>
-				<Icon name="github" width="2rem" height="2rem" />
-			</a>
-		{/if}
-		{#if animationSteps.icon_3}
-			<a
-				href="mailto:anas.mama.am@gmail.com"
-				class="hover:scale-[1.2] transition-all duration-300"
-				in:fade
-			>
-				<Icon name="mail" width="2rem" height="2rem" />
-			</a>
+		{#if animationSteps.icons}
+			<SocialLinks />
 		{/if}
 	</div>
 </div>

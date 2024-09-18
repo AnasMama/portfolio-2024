@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { view } from '$lib/function';
 	import { _ } from 'svelte-i18n';
+	import { fade, fly } from 'svelte/transition';
 
 	export let workExperiences: WorkExperienceType[] = [];
 
@@ -35,13 +36,14 @@
 </script>
 
 <div class="w-full p-6 flex flex-col justify-start gap-8">
-	<div class="text-balance flex justify-between items-center gap-4">
+	<div class="text-balance flex justify-between items-center gap-4" in:fade>
 		<h1 class="text-5xl font-normal">
 			{$_('navigation.work-experiences')}
 		</h1>
 	</div>
+
 	{#each workExperiences as { title, date, place, city, description }, i}
-		<div class="flex flex-col gap-2">
+		<div class="flex flex-col gap-2" in:fly={{ x: 100, duration: 500, delay: (i + 1) * 300 }}>
 			<h2 class="text-3xl font-normal">
 				{title}
 			</h2>

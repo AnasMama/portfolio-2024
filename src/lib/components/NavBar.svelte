@@ -4,8 +4,8 @@
 	import Burger from './Burger.svelte';
 
 	let links = [
-		{ href: '/projects', label: 'navigation.projects' },
 		{ href: '/about', label: 'navigation.about' },
+		{ href: '/projects', label: 'navigation.projects' },
 		{ href: '/contact', label: 'navigation.contact' }
 	];
 
