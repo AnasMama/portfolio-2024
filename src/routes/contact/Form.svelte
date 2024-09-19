@@ -73,9 +73,7 @@
 		<textarea
 			id="message"
 			name="message"
-			class="h-32 bg-transparent border border-base-light px-4 py-2 w-full transition-all duration-300 {animationSteps.line3
-				? 'max-w-full'
-				: 'max-w-0'}"
+			class="h-32 bg-transparent border border-base-light px-4 py-2 w-full transition-all duration-300"
 			bind:value={message}
 			required
 		/>

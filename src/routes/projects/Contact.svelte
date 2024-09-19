@@ -1,0 +1,24 @@
+<script>
+	import { _ } from 'svelte-i18n';
+	import Icon from '$lib/components/Icon.svelte';
+	import { view } from '$lib/function';
+	import { fly } from 'svelte/transition';
+</script>
+
+<a
+	href="/contact"
+	class="group/contact relative w-full flex flex-col justify-between gap-4 bg-error-default text-base-dark p-6 rounded hover:-translate-x-4 transition-all duration-300"
+	in:fly={{ y: 100, duration: 500 }}
+	style={view('contact')}
+>
+	<div class="flex justify-between items-center gap-4">
+		<p class="w-32 font-normal">{$_('homepage.have-question')}</p>
+		<Icon
+			name="arrow"
+			width="2rem"
+			height="2rem"
+			class="group-hover/contact:translate-x-2 group-hover/contact:-translate-y-2 transition-all duration-300"
+		/>
+	</div>
+	<p class="text-3xl font-normal">{$_('homepage.contact-me')}</p>
+</a>
