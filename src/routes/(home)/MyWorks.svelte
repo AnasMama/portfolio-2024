@@ -6,6 +6,7 @@
 	import { fade, fly } from 'svelte/transition';
 	import SocialLinks from '$lib/components/SocialLinks.svelte';
 	import { view } from '$lib/function';
+	import { projects } from '$lib/store';
 
 	let animationSteps = {
 		picture: false,
@@ -15,6 +16,8 @@
 		line_3: false,
 		icons: false
 	};
+
+	$: [project1, project2, project3] = $projects.slice(0, 3);
 
 	onMount(() => {
 		setTimeout(() => {
@@ -64,14 +67,17 @@
 	{/if}
 </a>
 <div class="grid grid-rows-4 row-span-3">
-	{#if animationSteps.line_1}
-		<LinkItem href="#" label="Svelte" />
+	{#if animationSteps.line_1 && project1}
+		{@const { title, slug } = project1}
+		<LinkItem {slug} label={title} />
 	{/if}
 	{#if animationSteps.line_2}
-		<LinkItem href="#" label="Tailwind" />
+		{@const { title, slug } = project2}
+		<LinkItem {slug} label={title} />
 	{/if}
 	{#if animationSteps.line_3}
-		<LinkItem href="#" label="Vite" />
+		{@const { title, slug } = project3}
+		<LinkItem {slug} label={title} />
 	{/if}
 	<div class="row-start-4 w-full grid grid-cols-5 items-center gap-16">
 		{#if animationSteps.icons}

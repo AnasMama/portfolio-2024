@@ -2,7 +2,9 @@
 	"projects": {
 		"title": "Projets",
 		"description": "Découvrez mes projets",
-		"technos": "Technologies"
+		"technos": "Technologies",
+		"link": "Lien",
+		"company": "Réalisé avec "
 	},
 	"navigation": {
 		"about": "À  propos",

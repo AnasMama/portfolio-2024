@@ -2,7 +2,9 @@
 	"navigation": {
 		"projects": "Projects",
 		"contact": "Contact",
-		"about": "About"
+		"about": "About",
+		"information": "My information",
+		"work-experiences": "Professional experiences"
 	},
 	"homepage": {
 		"have-question": "Do you have any questions?",
@@ -10,5 +12,44 @@
 		"developer": "<strong>Creative Developer</strong> for Web and Mobile Application",
 		"about-me": "I am a full-stack web developer based in Toulouse. \nIn this portfolio, I present to you my few projects created in Sveltekit/Next/TypeScript/Node. \nWelcome to my world!",
 		"my-works": "My projects"
+	},
+	"contact": {
+		"have-question": "Do you have a question or suggestion, or would you just like to say hello? \n \nGo for it !"
+	},
+	"form": {
+		"email": "E-mail",
+		"invalid-email": "Please enter a valid email.",
+		"message": "Message",
+		"name": "Name",
+		"submit": "Send"
+	},
+	"hobbies": {
+		"bass": "Bass",
+		"manga": "Manga",
+		"music": "Music"
+	},
+	"lang": {
+		"english": "English",
+		"french": "French"
+	},
+	"projects": {
+		"description": "Discover my projects",
+		"link": "Link",
+		"technos": "Technologies",
+		"title": "Projects",
+		"company": "Made with"
+	},
+	"work-experience": {
+		"fullstack-developer": "Full-stack web developer",
+		"onicorn": {
+			"clean": "Code maintenance and compliance with Clean Code principles",
+			"conception": "Design and modeling using mock-up tools (Excalidraw, Figma...)",
+			"development": "Creation of interfaces with SvelteKit and Tailwind, and data management via GraphQL API"
+		},
+		"teaching-assistant": "Assistant trainer",
+		"wild": {
+			"project": "Supervision of student projects carried out by real clients",
+			"teaching": "Preparation of courses and workshops on HTML, CSS, React and Express"
+		}
 	}
 }
