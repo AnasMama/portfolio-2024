@@ -13,8 +13,9 @@ export type ProjectType = {
 		content: string;
 	}[];
 	technologies: LogoName[];
-	main_img: string;
-	img: string[];
+	img_desktop: string | null;
+	img_mobile: string | null;
+	img_logo: string | null;
 };
 
 export type LogoName = (typeof LOGOS)[number]['name'];

@@ -51,5 +51,11 @@
 		"message": "Message",
 		"submit": "Envoyer",
 		"invalid-email": "Veuillez entrez un email valide."
+	},
+	"information": {
+		"age": "Âge",
+		"location": "Localisation",
+		"languages": "Langues",
+		"hobbies": "Passions"
 	}
 }

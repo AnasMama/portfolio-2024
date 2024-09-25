@@ -19,7 +19,7 @@
 		{#each Object.entries(information) as [key, value]}
 			<div class="flex justify-between gap-4 border-b border-base-dark">
 				<p class="text-balance text-lg font-bold">
-					{key}
+					{$_(`information.${key}`)}
 				</p>
 				<p class="text-balance font-normal">
 					{#if Array.isArray(value)}

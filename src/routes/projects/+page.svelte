@@ -12,45 +12,40 @@
 		: null;
 </script>
 
-<section class="w-full max-w-screen-2xl h-[800px] grid grid-cols-5 gap-2 mx-auto">
-	<article class="col-span-2 h-[800px] flex flex-col">
-		<figure class="h-2/3 flex justify-center items-start overflow-hidden">
-			<img
-				src="https://cms.onicorn.dev/assets/a9c381b7-ea01-4241-8ed6-ab53237d00c8?key=desktop-screenshot"
-				alt="hero"
-				class="min-w-full min-h-full object-cover"
-			/>
-		</figure>
-		<div class="w-full max-h-52 aspect-square overflow-hidden py-2 flex items-stretch gap-2">
-			<div>
+<section class="w-full max-w-screen-2xl h-[800px] grid gap-2 mx-auto lg:grid-cols-5">
+	<article class="h-[800px] flex flex-col gap-4 lg:col-span-2">
+		{#if selectedProject}
+			<figure class="w-full max-h-[55%] flex justify-center items-start shrink-0 overflow-hidden rounded">
 				<img
-					src="https://cms.onicorn.dev/assets/8e00ab98-884e-4fd5-8109-82e31fdf640c?key=mobile-screenshot"
-					alt="hero"
-					class="min-w-full min-h-full object-cover"
+					src={selectedProject?.img_desktop}
+					alt="{selectedProject.title} desktop"
+					class="w-full object-cover"
 				/>
+			</figure>
+			<div class="w-full max-h-80 shrink-0 overflow-hidden flex items-stretch gap-4">
+				<figure class="rounded overflow-hidden">
+					<img
+						src={selectedProject?.img_mobile}
+						alt="{selectedProject.title} mobile"
+						class="max-w-full"
+					/>
+				</figure>
+				<figure class="aspect-square h-full flex justify-center items-center shrink-0 rounded overflow-hidden">
+					<img
+						src={selectedProject?.img_logo}
+						alt="{selectedProject.title} logo"
+						class="min-w-full min-h-full object-cover"
+					/>
+				</figure>
 			</div>
-			<div>
-				<img
-					src="https://cms.onicorn.dev/assets/8e00ab98-884e-4fd5-8109-82e31fdf640c?key=mobile-screenshot"
-					alt="hero"
-					class="min-w-full min-h-full object-cover"
-				/>
-			</div>
-			<div>
-				<img
-					src="https://cms.onicorn.dev/assets/8e00ab98-884e-4fd5-8109-82e31fdf640c?key=mobile-screenshot"
-					alt="hero"
-					class="min-w-full min-h-full object-cover"
-				/>
-			</div>
-		</div>
+		{/if}
 	</article>
-	<article class="col-span-2 flex flex-col justify-start gap-4 px-8">
+	<article class="flex flex-col justify-start gap-4 px-8 lg:col-span-2">
 		{#if selectedProject}
 			<Presentation {selectedProject} />
 		{/if}
 	</article>
-	<article class="col-start-5 flex flex-col justify-start gap-8">
+	<article class="flex flex-col justify-start gap-8 lg:col-start-5">
 		{#if selectedProject}
 			<Navigation projects={$projects} {selectedProject} />
 		{/if}
