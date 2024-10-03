@@ -40,29 +40,36 @@
 	});
 </script>
 
-<section class="w-full max-w-screen-2xl h-[800px] grid grid-cols-12 grid-rows-7 gap-2 mx-auto">
+<section
+	class="w-full max-w-screen-2xl gap-2 mx-auto md:grid md:grid-cols-5 lg:h-[800px] lg:grid-cols-12 lg:grid-rows-7"
+>
 	<Title isMotif={animationSteps.motifs} isTitle={animationSteps.title} />
-	<div class="col-span-3 row-span-4">
+	<div class="hidden md:flex md:col-span-2 lg:row-span-4 lg:col-span-3">
 		{#if animationSteps.picture}
 			<Picture />
 		{/if}
 	</div>
-	<div class="col-span-4 row-span-6 grid grid-rows-6">
+	<div class="hidden col-span-4 row-span-6 lg:grid lg:grid-rows-6">
 		{#if animationSteps.projects}
 			<MyWorks />
 		{/if}
 	</div>
-	<div class="col-span-4 row-span-3">
+	<div class="md:col-span-3 lg:col-span-4 lg:row-span-3">
 		{#if animationSteps.about}
 			<About />
 		{/if}
 	</div>
-	<div class="col-span-4 row-span-3">
+	<div class="md:col-span-2 lg:col-span-4 lg:row-span-3">
 		{#if animationSteps.contact}
 			<Contact />
 		{/if}
 	</div>
-	<div class="col-span-4">
+	<div class="md:col-span-5 lg:col-span-4 lg:row-span-6 lg:hidden">
+		{#if animationSteps.projects}
+			<MyWorks />
+		{/if}
+	</div>
+	<div class="h-24 col-span-5 lg:col-span-4 lg:h-full">
 		{#if animationSteps.motifs}
 			<div class="h-full w-full text-base-dark overflow-hidden" in:fly={{ x: 100, duration: 500 }}>
 				<Motif />

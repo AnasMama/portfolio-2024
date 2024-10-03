@@ -55,7 +55,7 @@
 	});
 </script>
 
-<form class="flex flex-col gap-8" on:submit|preventDefault={handleSubmit} in:fade>
+<form class="flex flex-col gap-4 lg:gap-8" on:submit|preventDefault={handleSubmit} in:fade>
 	<label class="flex flex-col gap-4">
 		<span>{$_('form.name')}</span>
 		<input

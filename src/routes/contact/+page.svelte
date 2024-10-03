@@ -38,27 +38,32 @@
 	});
 </script>
 
-<section class="w-full max-w-screen-2xl h-[800px] flex justify-between items-stretch gap-2 mx-auto">
+<section
+	class="w-full max-w-screen-2xl flex flex-col justify-between items-center gap-4 mx-auto lg:flex-row lg:h-[800px] lg:items-stretch lg:gap-2"
+>
 	<article class="w-full max-w-md">
 		<div
-			class="group/contact relative size-[min(100%,28rem)] flex flex-col justify-start gap-16 bg-error-default text-base-dark p-8 rounded"
+			class="group/contact relative size-[min(100%,28rem)] flex flex-col justify-start items-center gap-4 bg-error-default p-4 text-base-dark rounded lg:gap-16 lg:p-8"
 			style={view('contact')}
 		>
-			<h1 class="text-5xl font-normal">{$_('homepage.contact-me')}</h1>
-			<p class="font-normal max-w-xs text-balance">{$_('contact.have-question')}</p>
+			<h1 class="text-3xl font-normal lg:text-5xl">{$_('homepage.contact-me')}</h1>
+			<p class="hidden font-normal max-w-xs text-balance lg:flex">{$_('contact.have-question')}</p>
+			<div class="w-full flex justify-center items-center gap-12 lg:hidden">
+				<SocialLinks />
+			</div>
 		</div>
-        <div class="w-full grid grid-cols-5 items-center gap-16 py-8">
-            {#if animationSteps.icons}
-                <SocialLinks />
-            {/if}
-        </div>
+		<div class="hidden w-full py-8 lg:grid lg:grid-cols-5 lg:items-center lg:gap-16">
+			{#if animationSteps.icons}
+				<SocialLinks />
+			{/if}
+		</div>
 	</article>
 
-	<article class="self-center w-full max-w-md">
+	<article class="self-center w-full max-w-md p-2">
 		<Form />
 	</article>
 
-	<article class="w-20 h-full text-base-dark">
+	<article class="hidden w-20 h-full text-base-dark lg:flex">
 		{#if animationSteps.motifs}
 			<div
 				class="h-full w-full rounded overflow-hidden transition-all"

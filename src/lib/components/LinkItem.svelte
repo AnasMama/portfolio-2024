@@ -20,7 +20,7 @@
 
 <a
 	{href}
-	class="group/link relative w-full h-18 text-3xl flex items-center overflow-hidden py-2 px-6"
+	class="group/link relative w-full text-xl flex items-center overflow-hidden py-4 px-6 lg:h-18 lg:text-3xl"
 >
 	<div
 		class="relative h-full w-full flex items-center overflow-hidden"
