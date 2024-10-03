@@ -51,5 +51,11 @@
 			"project": "Supervision of student projects carried out by real clients",
 			"teaching": "Preparation of courses and workshops on HTML, CSS, React and Express"
 		}
+	},
+	"information": {
+		"age": "Age",
+		"hobbies": "Passions",
+		"languages": "LANGUAGES",
+		"location": "Location"
 	}
 }
