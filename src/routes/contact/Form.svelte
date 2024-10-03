@@ -14,6 +14,7 @@
 	let name = '';
 	let email = '';
 	let message = '';
+	let honeypot = '';
 
 	$: emailFlag = email && !checkEmail(email);
 
@@ -23,6 +24,10 @@
 	}
 
 	async function handleSubmit(event: Event) {
+		if (honeypot !== '') {
+			console.log('Bot detected, form submission blocked.');
+			return;
+		}
 		try {
 			const response = await fetch('/contact', {
 				method: 'POST',
@@ -94,6 +99,7 @@
 			required
 		/>
 	</label>
+	<input type="text" id="honeypot" bind:value={honeypot} class="hidden" />
 
 	<button
 		type="submit"

@@ -15,9 +15,13 @@ const mailjet = Mailjet.apiConnect(
 
 export const POST: RequestHandler = async ({ request }) => {
 	try {
-		const { name, email, message } = await request.json();
+		const { name, email, message, honeypot } = await request.json();
 
-		// Configuration de l'email à envoyer
+		if (honeypot) {
+			console.log('Bot detected, submission blocked.');
+			return json({ success: false, message: 'Bot detected' }, { status: 400 });
+		}
+
 		const emailData = {
 			Messages: [
 				{
