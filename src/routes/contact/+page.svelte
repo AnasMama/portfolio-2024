@@ -39,7 +39,7 @@
 </script>
 
 <section
-	class="w-full max-w-screen-2xl flex flex-col justify-between items-center gap-4 mx-auto lg:flex-row lg:h-[800px] lg:items-stretch lg:gap-2"
+	class="w-full max-w-screen-2xl flex flex-col justify-between items-center gap-4 mx-auto overflow-clip lg:flex-row lg:h-[800px] lg:items-stretch lg:gap-2"
 >
 	<article class="w-full max-w-md">
 		<div
