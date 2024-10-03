@@ -15,8 +15,6 @@
 		<p class="w-32 font-normal">{$_('homepage.have-question')}</p>
 		<Icon
 			name="arrow"
-			width="2rem"
-			height="2rem"
 			class="group-hover/contact:translate-x-2 group-hover/contact:-translate-y-2 transition-all duration-300"
 		/>
 	</div>

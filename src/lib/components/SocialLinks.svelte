@@ -30,7 +30,7 @@
 		class="col-start-2 hover:scale-[1.2] transition-all duration-300"
 		in:fade
 	>
-		<Icon name="linkedin" width="2rem" height="2rem" />
+		<Icon name="linkedin" />
 	</a>
 {/if}
 {#if animationSteps.icon_2}
@@ -41,15 +41,15 @@
 		class="hover:scale-[1.2] transition-all duration-300"
 		in:fade
 	>
-		<Icon name="github" width="2rem" height="2rem" />
+		<Icon name="github" />
 	</a>
 {/if}
 {#if animationSteps.icon_3}
 	<a
-		href="mailto:anas.mama.am@gmail.com"
+		href="mailto:anas.mama.pro@gmail.com"
 		class="hover:scale-[1.2] transition-all duration-300"
 		in:fade
 	>
-		<Icon name="mail" width="2rem" height="2rem" />
+		<Icon name="mail" />
 	</a>
 {/if}

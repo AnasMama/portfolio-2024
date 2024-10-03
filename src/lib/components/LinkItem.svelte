@@ -33,12 +33,7 @@
 			{label}
 		</span>
 	</div>
-	<Icon
-		name="arrow"
-		width="2rem"
-		height="2rem"
-		class="rotate-45 group-hover/link:translate-x-2 transition-all duration-300"
-	/>
+	<Icon name="arrow" class="rotate-45 group-hover/link:translate-x-2 transition-all duration-300" />
 	<div
 		class="h-px w-0 bg-base-light absolute bottom-0 left-0 right-0 transition-all duration-300 group-hover/link:w-4/5"
 		class:w-full={isLine}

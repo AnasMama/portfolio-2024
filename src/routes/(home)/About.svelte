@@ -14,8 +14,6 @@
 		<p class="text-5xl font-normal" style={view('about-title')}>{$_('navigation.about')}</p>
 		<Icon
 			name="arrow"
-			width="2rem"
-			height="2rem"
 			class="group-hover/about:translate-x-2 group-hover/about:-translate-y-2 transition-all duration-300"
 		/>
 	</div>
@@ -23,5 +21,3 @@
 		{$_('homepage.about-me')}
 	</p>
 </a>
-
-

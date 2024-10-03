@@ -1,9 +1,10 @@
 <script lang="ts">
+	import type { LayoutData } from './$types';
 	import { onNavigate } from '$app/navigation';
 	import NavBar from '$lib/components/NavBar.svelte';
-	import { projects } from '$lib/store';
+	import Toaster from '$lib/components/Toaster.svelte';
+	import { message, projects } from '$lib/store';
 	import '../app.css';
-	import type { LayoutData } from './$types';
 
 	export let data: LayoutData;
 
@@ -25,3 +26,7 @@
 <main class="w-full">
 	<slot />
 </main>
+
+{#if $message}
+	<Toaster />
+{/if}
