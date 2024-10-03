@@ -7,8 +7,8 @@
 	export let selectedProject: ProjectType;
 </script>
 
-<h1 class="text-5xl font-normal" style={view('projects-title')}>{$_('homepage.my-works')}</h1>
-<ul class="flex flex-col mb-auto">
+<h1 class="text-5xl font-normal hidden lg:flex" style={view('projects-title')}>{$_('homepage.my-works')}</h1>
+<ul class="flex flex-col mb-auto hidden lg:flex">
 	{#each projects as { title, slug }}
 		<li class="text-3xl py-4 fade-in">
 			<a href="#{slug}" class="group w-fit flex flex-col items-stretch gap-2">

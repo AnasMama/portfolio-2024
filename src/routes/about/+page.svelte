@@ -31,22 +31,30 @@
 	});
 </script>
 
-<section class="w-full max-w-screen-2xl h-[800px] grid grid-cols-3 gap-2 mx-auto">
+<section class="w-full max-w-screen-2xl grid gap-2 mx-auto overflow-clip md:grid-cols-2 lg:h-[800px] lg:grid-cols-3">
+	<figure class="h-64 w-full row-span-2 md:h-full lg:hidden">
+		<img
+			src="/profil-2024.jpg"
+			alt="profile"
+			class="object-cover w-full h-full"
+			style={view('about-picture')}
+		/>
+	</figure>
 	<article class="flex flex-col justify-start">
-		<div class="group/about w-full bg-base-default p-6 flex flex-col justify-between gap-16">
+		<div class="group/about w-full bg-base-default flex flex-col justify-between gap-4 p-4 lg:p-6 lg:gap-16">
 			<div class="flex justify-between items-center gap-4">
-				<h1 class="text-5xl font-normal" style={view('about-title')}>
+				<h1 class="text-3xl font-normal lg:text-5xl" style={view('about-title')}>
 					{$_('navigation.about')}
 				</h1>
 			</div>
-			<p class="text-xl font-normal text-balance mb-4" style={view('about-content')}>
+			<p class="font-normal text-balance mb-4 lg:text-xl" style={view('about-content')}>
 				{$_('homepage.about-me')}
 			</p>
 		</div>
 		<Information />
 	</article>
 
-	<article class="w-full text-base-dark grid grid-rows-8 gap-2">
+	<article class="hidden w-full text-base-dark grid-rows-8 gap-2 lg:grid">
 		{#if animationSteps.motifs}
 			<div
 				class="h-24 w-full rounded overflow-hidden transition-all"
@@ -77,7 +85,7 @@
 		{/if}
 	</article>
 	
-	<article class="grid grid-rows-8">
+	<article class="grid grid-rows-8 md:col-span-2 lg:col-span-1">
 		<div class="row-span-7">
 			{#if animationSteps.experiences}
 				<WorkExperiences />

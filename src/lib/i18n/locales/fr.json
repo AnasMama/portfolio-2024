@@ -10,7 +10,7 @@
 		"about": "À  propos",
 		"projects": "Projets",
 		"contact": "Contact",
-		"work-experiences": "Expèriences professionelles",
+		"work-experiences": "Expériences professionelles",
 		"information": "Mes informations"
 	},
 	"homepage": {
@@ -43,7 +43,11 @@
 		"bass": "Bass"
 	},
 	"contact": {
-		"have-question": "Vous avez une question ou une proposition, ou vous souhaitez simplement dire bonjour ? \n Allez-y !"
+		"have-question": "Vous avez une question ou une proposition, ou vous souhaitez simplement dire bonjour ? \n Allez-y !",
+		"alert": {
+			"success": "Votre message a été envoyé avec succès !",
+			"failed": "Oops... Votre message n'a pas pu être envoyé. Veuillez rééssayer un  peu plus tard."
+		}
 	},
 	"form": {
 		"name": "Nom",
@@ -51,5 +55,11 @@
 		"message": "Message",
 		"submit": "Envoyer",
 		"invalid-email": "Veuillez entrez un email valide."
+	},
+	"information": {
+		"age": "Âge",
+		"location": "Localisation",
+		"languages": "Langues",
+		"hobbies": "Passions"
 	}
 }

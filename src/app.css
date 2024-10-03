@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  @apply font-sans font-light bg-base-dark text-base-light max-h-dvh overflow-hidden;
+  @apply font-sans font-light bg-base-dark text-base-light;
 }
 
 @keyframes fadeIn {

@@ -41,21 +41,19 @@
 	});
 </script>
 
-<a href="/projects" class="group/works h-full w-full row-span-3 grid grid-rows-3">
+<a href="/projects" class="group/works w-full lg:row-span-3 lg:grid lg:grid-rows-3">
 	{#if animationSteps.title}
-		<div class="row-span-1 h-full flex justify-between items-center gap-4 py-6 px-6" in:fade>
-			<p class="text-5xl font-normal" style={view('projects-title')}>{$_('homepage.my-works')}</p>
+		<div class="row-span-1 flex justify-between items-center gap-4 px-6 py-6" in:fade>
+			<p class="text-3xl font-normal lg:text-5xl" style={view('projects-title')}>{$_('homepage.my-works')}</p>
 			<Icon
 				name="arrow"
-				width="2rem"
-				height="2rem"
 				class="group-hover/works:translate-x-2 group-hover/works:-translate-y-2 transition-all duration-300"
 			/>
 		</div>
 	{/if}
 	{#if animationSteps.picture}
 		<div
-			class="row-span-2 row-start-2 h-full rounded bg-base-light overflow-hidden group-hover/works:translate-x-2 transition-all duration-300"
+			class="hidden row-span-2 row-start-2 h-full rounded bg-base-light overflow-hidden group-hover/works:translate-x-2 transition-all duration-300 lg:flex"
 			in:fly={{ x: 100, duration: 500 }}
 		>
 			<img
@@ -79,7 +77,7 @@
 		{@const { title, slug } = project3}
 		<LinkItem {slug} label={title} />
 	{/if}
-	<div class="row-start-4 w-full grid grid-cols-5 items-center gap-16">
+	<div class="row-start-4 w-full items-center gap-16 grid grid-cols-5 py-8">
 		{#if animationSteps.icons}
 			<SocialLinks />
 		{/if}
