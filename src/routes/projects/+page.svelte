@@ -5,7 +5,6 @@
 	import { page } from '$app/stores';
 	import Presentation from './Presentation.svelte';
 	import { projects } from '$lib/store';
-	import { view } from '$lib/function';
 	import Carousel from './Carousel.svelte';
 
 	$: activeSlug = $page.url.hash.split('#').pop();
