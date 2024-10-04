@@ -29,7 +29,7 @@
 			<ul
 				class="absolute top-full w-full right-0 {isMobileOpen
 					? 'flex'
-					: 'hidden md:flex'} flex-col items-center justify-between text-lg bg-base-dark gap-8 py-8 px-16 z-50 md:text-xl md:py-0 md:px-8 md:relative md:flex md:flex-row lg:gap-16"
+					: 'hidden md:flex'} flex-col items-center justify-between text-lg bg-base-dark gap-8 py-8 px-16 z-50 md:text-xl md:py-0 md:px-8 md:relative md:flex md:flex-row lg:w-fit lg:gap-16"
 				transition:slide
 			>
 				{#each links as { href, label }, i}
