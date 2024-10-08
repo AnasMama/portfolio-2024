@@ -8,6 +8,9 @@
 	import About from './About.svelte';
 	import Picture from '$lib/components/Picture.svelte';
 	import MyWorks from './MyWorks.svelte';
+	import LdTag from '$lib/components/JSON-LD/LDTag.svelte';
+	import { personSchema } from '$lib/components/JSON-LD/json-ld';
+	import { page } from '$app/stores';
 
 	let animationSteps = {
 		picture: false,
@@ -39,6 +42,25 @@
 		}, 750);
 	});
 </script>
+
+<svelte:head>
+	<title>Portfolio | Anas MAMA</title>
+	<meta name="title" content="Portfolio | Anas MAMA" />
+	<meta name="description" content={$_('homepage.meta.description')} />
+	<meta name="keywords" content={$_('homepage.meta.keywords')} />
+	<meta name="author" content="Anas MAMA" />
+	<meta name="robots" content="index, follow" />
+	<LdTag
+		schema={personSchema(
+			'Anas MAMA',
+			$_('json.job'),
+			$_('homepage.meta.description'),
+			['https://www.linkedin.com/in/anasmama', 'https://github.com/AnasMama'],
+			'Freelance',
+			$page.url.origin
+		)}
+	/>
+</svelte:head>
 
 <section
 	class="w-full max-w-screen-2xl gap-2 mx-auto overflow-clip md:grid md:grid-cols-5 lg:h-[800px] lg:grid-cols-12 lg:grid-rows-7"

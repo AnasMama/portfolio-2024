@@ -9,9 +9,12 @@
 	in:fly={{ y: -100, duration: 500 }}
 >
 	<img
-		src="/profil-2024.jpg"
+		src="/profil-2024.webp"
 		alt="profile"
+		width="400"
+		height="450"
 		class="object-cover w-full h-full"
 		style={view('about-picture')}
+		loading="lazy"
 	/>
 </a>
