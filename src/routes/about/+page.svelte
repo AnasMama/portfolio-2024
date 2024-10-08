@@ -31,10 +31,21 @@
 	});
 </script>
 
+<svelte:head>
+	<title>{$_('navigation.about')} | Anas MAMA</title>
+	<meta name="title" content="{$_('navigation.about')} | Anas MAMA" />
+	<meta name="description" content={$_('about.meta.description')} />
+	<meta name="keywords" content={$_('about.meta.keywords')} />
+	<meta name="author" content="Anas MAMA" />
+	<meta name="robots" content="index, follow" />
+</svelte:head>
+
 <section class="w-full max-w-screen-2xl grid gap-2 mx-auto overflow-clip md:grid-cols-2 lg:h-[800px] lg:grid-cols-3">
 	<figure class="h-64 w-full row-span-2 md:h-full lg:hidden">
 		<img
-			src="/profil-2024.jpg"
+			src="/profil-2024.webp"
+			width="400"
+			height="450"
 			alt="profile"
 			class="object-cover w-full h-full"
 			style={view('about-picture')}
@@ -67,7 +78,7 @@
 		{/if}
 		<figure class="h-full w-full row-span-6">
 			<img
-				src="/profil-2024.jpg"
+				src="/profil-2024.webp"
 				alt="profile"
 				class="object-cover w-full h-full"
 				style={view('about-picture')}

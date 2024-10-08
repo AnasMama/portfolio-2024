@@ -44,7 +44,9 @@
 <a href="/projects" class="group/works w-full lg:row-span-3 lg:grid lg:grid-rows-3">
 	{#if animationSteps.title}
 		<div class="row-span-1 flex justify-between items-center gap-4 px-6 py-6" in:fade>
-			<p class="text-3xl font-normal lg:text-5xl" style={view('projects-title')}>{$_('homepage.my-works')}</p>
+			<p class="text-3xl font-normal lg:text-5xl" style={view('projects-title')}>
+				{$_('homepage.my-works')}
+			</p>
 			<Icon
 				name="arrow"
 				class="group-hover/works:translate-x-2 group-hover/works:-translate-y-2 transition-all duration-300"
@@ -58,8 +60,10 @@
 		>
 			<img
 				src="/my-works.webp"
-				alt="hero"
+				alt="my works"
 				class="object-cover w-full h-full transition-all duration-300"
+				width="400"
+				height="450"
 			/>
 		</div>
 	{/if}

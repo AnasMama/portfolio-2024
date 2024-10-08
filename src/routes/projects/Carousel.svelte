@@ -46,12 +46,14 @@
 	</ul>
 
 	<button
+		name="previous"
 		class="absolute left-4 top-1/2 transform -translate-y-1/2 hover:scale-105 transition-all duration-300"
 		on:click={prevProject}
 	>
 		<Icon name="chevron" />
 	</button>
 	<button
+		name="next"
 		class="absolute right-4 top-1/2 transform -translate-y-1/2 hover:scale-105 transition-all duration-300"
 		on:click={nextProject}
 	>

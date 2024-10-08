@@ -20,7 +20,7 @@
 	{/if}
 	{#if isTitle}
 		<div class="h-full w-full rounded bg-info-default p-4 lg:p-8" in:fly={{ x: -100, duration: 500 }}>
-			<p class="text-3xl text-balance md:text-5xl lg:text-6xl">{@html $_('homepage.developer')}</p>
+			<h1 class="text-3xl text-balance md:text-5xl lg:text-6xl">{@html $_('homepage.developer')}</h1>
 		</div>
 	{:else}
 		<div class="h-full w-full rounded p-8" />

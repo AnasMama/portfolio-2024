@@ -24,6 +24,7 @@
 
 {#if animationSteps.icon_1}
 	<a
+		aria-label="Linkedin"
 		href="https://www.linkedin.com/in/anasmama/"
 		target="_blank"
 		rel="noopener"
@@ -35,7 +36,8 @@
 {/if}
 {#if animationSteps.icon_2}
 	<a
-		href="https://www.linkedin.com/in/anasmama/"
+		aria-label="GitHub"
+		href="https://github.com/AnasMama/"
 		target="_blank"
 		rel="noopener"
 		class="hover:scale-[1.2] transition-all duration-300"

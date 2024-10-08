@@ -13,6 +13,16 @@
 		: null;
 </script>
 
+<svelte:head>
+	<title>{$_("navigation.projects")} | Anas MAMA</title>
+	<meta name="title" content="{$_("navigation.projects")} | Anas MAMA" />
+	<meta name="description" content={$_('projects.meta.description')} />
+	<meta name="keywords" content={$_('projects.meta.keywords')} />
+	<meta name="author" content="Anas MAMA" />
+	<meta name="robots" content="index, follow" />
+</svelte:head>
+
+
 <section
 	class="w-full max-w-screen-2xl grid gap-2 mx-auto overflow-clip lg:grid-cols-5 lg:h-[800px]"
 >

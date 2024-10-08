@@ -38,6 +38,15 @@
 	});
 </script>
 
+<svelte:head>
+	<title>{$_('navigation.contact')} | Anas MAMA</title>
+	<meta name="title" content="{$_('navigation.contact')} | Anas MAMA" />
+	<meta name="description" content={$_('contact.meta.description')} />
+	<meta name="keywords" content={$_('contact.meta.keywords')} />
+	<meta name="author" content="Anas MAMA" />
+	<meta name="robots" content="index, follow" />
+</svelte:head>
+
 <section
 	class="w-full max-w-screen-2xl flex flex-col justify-between items-center gap-4 mx-auto overflow-clip lg:flex-row lg:h-[800px] lg:items-stretch lg:gap-2"
 >

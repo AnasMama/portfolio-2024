@@ -11,13 +11,21 @@
 		"contact-me": "Contact me",
 		"developer": "<strong>Creative Developer</strong> for Web and Mobile Application",
 		"about-me": "I am a full-stack web developer based in Toulouse. \nIn this portfolio, I present to you my few projects created in Sveltekit/Next/TypeScript/Node. \nWelcome to my world!",
-		"my-works": "My projects"
+		"my-works": "My projects",
+		"meta": {
+			"description": "Welcome to the portfolio of Anas MAMA, web developer specialized in Svelte, React, TypeScript and Tailwind. \nDiscover my projects, skills and experiences in web development.",
+			"keywords": "Anas MAMA, web developer, portfolio, Svelte, TypeScript, Tailwind, projects, web development, frontend, backend, full-stack"
+		}
 	},
 	"contact": {
 		"have-question": "Do you have a question or suggestion, or would you just like to say hello? \n \nGo for it !",
 		"alert": {
 			"failed": "Oops... Your message could not be sent. \nPlease try again a little later.",
 			"success": "Your message has been sent successfully!"
+		},
+		"meta": {
+			"description": "Contact Anas MAMA, web developer specializing in Svelte, TypeScript and Tailwind, for any questions or collaboration.",
+			"keywords": "Anas MAMA, contact, web developer, collaboration, projects, Svelte, TypeScript, Tailwind"
 		}
 	},
 	"form": {
@@ -41,7 +49,11 @@
 		"link": "Link",
 		"technos": "Technologies",
 		"title": "Projects",
-		"company": "Made with"
+		"company": "Made with",
+		"meta": {
+			"description": "Explore the web projects created by Anas MAMA, developer specializing in Svelte, TypeScript and Tailwind. \nDiscover his creations and innovative solutions.",
+			"keywords": "Anas MAMA, projects, portfolio, web development, Svelte, TypeScript, Tailwind, achievements, creations"
+		}
 	},
 	"work-experience": {
 		"fullstack-developer": "Full-stack web developer",
@@ -61,5 +73,11 @@
 		"hobbies": "Passions",
 		"languages": "LANGUAGES",
 		"location": "Location"
+	},
+	"about": {
+		"meta": {
+			"description": "Discover the journey of Anas MAMA, a passionate web developer with expertise in Svelte, TypeScript, and Tailwind. \nLearn more about their experience and skills.",
+			"keywords": "Anas MAMA, about, web developer, background, skills, experience, Svelte, TypeScript, Tailwind"
+		}
 	}
 }

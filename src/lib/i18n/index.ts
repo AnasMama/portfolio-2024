@@ -1,6 +1,6 @@
 import { getLocaleFromNavigator, init, register } from 'svelte-i18n';
 
-const defaultLocale = 'en';
+const defaultLocale = 'fr';
 
 register('en', () => import('./locales/en.json'));
 register('fr', () => import('./locales/fr.json'));

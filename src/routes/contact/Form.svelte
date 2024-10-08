@@ -103,6 +103,7 @@
 
 	<button
 		type="submit"
+		name="submit"
 		class="group/button self-end flex justify-end items-center border border-base-light uppercase pl-8 pr-6 py-2 transition-all duration-300"
 	>
 		<span class="mr-2">{$_('form.submit')}</span>

@@ -40,6 +40,15 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Portfolio | Anas MAMA</title>
+	<meta name="title" content="Portfolio | Anas MAMA" />
+	<meta name="description" content="{$_('homepage.meta.description')}" />
+	<meta name="keywords" content="{$_('homepage.meta.keywords')}" />
+	<meta name="author" content="Anas MAMA" />
+	<meta name="robots" content="index, follow" />
+</svelte:head>
+
 <section
 	class="w-full max-w-screen-2xl gap-2 mx-auto overflow-clip md:grid md:grid-cols-5 lg:h-[800px] lg:grid-cols-12 lg:grid-rows-7"
 >
