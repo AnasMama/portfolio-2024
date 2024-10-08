@@ -15,5 +15,6 @@
 		height="450"
 		class="object-cover w-full h-full"
 		style={view('about-picture')}
+		loading="lazy"
 	/>
 </a>

@@ -79,5 +79,8 @@
 			"description": "Discover the journey of Anas MAMA, a passionate web developer with expertise in Svelte, TypeScript, and Tailwind. \nLearn more about their experience and skills.",
 			"keywords": "Anas MAMA, about, web developer, background, skills, experience, Svelte, TypeScript, Tailwind"
 		}
+	},
+	"json": {
+		"job": "Web Developer"
 	}
 }

@@ -48,6 +48,7 @@
 {/if}
 {#if animationSteps.icon_3}
 	<a
+		aria-label="Email"
 		href="mailto:anas.mama.pro@gmail.com"
 		class="hover:scale-[1.2] transition-all duration-300"
 		in:fade

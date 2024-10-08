@@ -64,6 +64,7 @@
 				class="object-cover w-full h-full transition-all duration-300"
 				width="400"
 				height="450"
+				loading="lazy"
 			/>
 		</div>
 	{/if}

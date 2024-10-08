@@ -6,6 +6,8 @@
 	import Presentation from './Presentation.svelte';
 	import { projects } from '$lib/store';
 	import Carousel from './Carousel.svelte';
+	import LdTag from '$lib/components/JSON-LD/LDTag.svelte';
+	import { projectSchema } from '$lib/components/JSON-LD/json-ld';
 
 	$: activeSlug = $page.url.hash.split('#').pop();
 	$: selectedProject = $projects.length
@@ -14,14 +16,22 @@
 </script>
 
 <svelte:head>
-	<title>{$_("navigation.projects")} | Anas MAMA</title>
-	<meta name="title" content="{$_("navigation.projects")} | Anas MAMA" />
+	<title>{$_('navigation.projects')} | Anas MAMA</title>
+	<meta name="title" content="{$_('navigation.projects')} | Anas MAMA" />
 	<meta name="description" content={$_('projects.meta.description')} />
 	<meta name="keywords" content={$_('projects.meta.keywords')} />
 	<meta name="author" content="Anas MAMA" />
 	<meta name="robots" content="index, follow" />
+	{#if selectedProject}
+		{@const { title, description, technologies, tags, img_desktop, img_logo, img_mobile, slug } =
+			selectedProject}
+		{@const translated_description =
+			description.find((desc) => desc.lang.toLocaleLowerCase() === 'fr')?.content || ''}
+		{@const img = [img_desktop, img_logo, img_mobile].filter((img) => img !== null)}
+		{@const url = `${$page.url.origin}/projects#${slug}`}
+		<LdTag schema={projectSchema(title, translated_description, tags, technologies, img, url)} />
+	{/if}
 </svelte:head>
-
 
 <section
 	class="w-full max-w-screen-2xl grid gap-2 mx-auto overflow-clip lg:grid-cols-5 lg:h-[800px]"

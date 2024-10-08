@@ -49,6 +49,7 @@
 			alt="profile"
 			class="object-cover w-full h-full"
 			style={view('about-picture')}
+			loading="lazy"
 		/>
 	</figure>
 	<article class="flex flex-col justify-start">
@@ -82,6 +83,7 @@
 				alt="profile"
 				class="object-cover w-full h-full"
 				style={view('about-picture')}
+				loading="lazy"
 			/>
 		</figure>
 		{#if animationSteps.motifs}
