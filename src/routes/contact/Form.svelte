@@ -23,6 +23,13 @@
 		return re.test(email);
 	}
 
+	function resetForm() {
+		name = '';
+		email = '';
+		message = '';
+		honeypot = '';
+	}
+
 	async function handleSubmit(event: Event) {
 		if (honeypot !== '') {
 			console.log('Bot detected, form submission blocked.');
@@ -35,8 +42,10 @@
 				body: JSON.stringify({ name, email, message })
 			});
 
-			if (response.ok) showToast($_('contact.alert.success'), 'success');
-			else throw new Error(response.statusText);
+			if (response.ok) {
+				showToast($_('contact.alert.success'), 'success');
+				resetForm();
+			} else throw new Error(response.statusText);
 		} catch (error) {
 			showToast($_('contact.alert.failed'), 'error');
 		}
