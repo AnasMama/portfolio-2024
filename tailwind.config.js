@@ -15,7 +15,7 @@ module.exports = {
 					default: '#39A2AE'
 				},
 				error: {
-					default: '#C14953'
+					default: '#CE6F77'
 				},
 				warning: {
 					default: '#BC8034'

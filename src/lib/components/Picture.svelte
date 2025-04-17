@@ -5,7 +5,7 @@
 
 <a
 	href="/about"
-	class="h-full w-full flex rounded overflow-hidden transition-all duration-300 hover:-translate-y-2"
+	class="h-64 w-full flex rounded overflow-hidden transition-all duration-300 hover:-translate-y-2 md:h-full"
 	in:fly={{ y: -100, duration: 500 }}
 >
 	<img

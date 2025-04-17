@@ -63,10 +63,10 @@
 </svelte:head>
 
 <section
-	class="w-full max-w-screen-2xl gap-2 mx-auto overflow-clip md:grid md:grid-cols-5 lg:h-[800px] lg:grid-cols-12 lg:grid-rows-7"
+	class="w-full max-w-screen-2xl gap-2 mx-auto overflow-y-clip overflow-x-visible md:grid md:grid-cols-5 lg:h-[800px] lg:grid-cols-12 lg:grid-rows-7"
 >
 	<Title isMotif={animationSteps.motifs} isTitle={animationSteps.title} />
-	<div class="hidden md:flex md:col-span-2 lg:row-span-4 lg:col-span-3">
+	<div class="flex md:col-span-2 lg:row-span-4 lg:col-span-3">
 		{#if animationSteps.picture}
 			<Picture />
 		{/if}
